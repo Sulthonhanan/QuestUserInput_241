@@ -13,6 +13,7 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
+import androidx.compose.runtime.internal.illegalDecoyCallException
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -88,9 +89,11 @@ fun FormDataDiri(modifier: Modifier){
         Text(text = stringResource(id = R.dimen.padding_medium)
     }
     HorizontalDivider(
-        modifier = Modifier.padding(bottom = dimensionResource(id = R.dimen.padding_medium),
-            top = dimensionResource(id = R.dimen.padding_small)),
-        thickness = dimensionResource(id = R.dimen.divider_tipis),
-        color = Color.Darkgrey
+        modifier = Modifier.padding(bottom = dimensionResource(R.dimen.padding_medium), top = dimensionResource(
+            id = R.dimen.padding_medium
+        )),
+        thickness = dimensionResource(R.dimen.divider_tipis),
+        color = Color.DarkGray
     )
+
 }
