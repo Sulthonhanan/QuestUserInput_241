@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.R
+import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -20,8 +21,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.example.myapplication.padding_medium
 
 
+private val Unit.padding_medium: Int
+
+@SuppressLint("ResourceType")
 @composable
 fun FormDataDiri(modifier: Modifier){
     //variable-variable untuk mengingat nilai masukan dari keyboard
@@ -98,6 +103,9 @@ fun FormDataDiri(modifier: Modifier){
         elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
         colors = CardDefaults.cardColors(containerColor = Color.Black),
         modifier = Modifier
+            .height(100.dp)
+            .width(300.dp)
+    )
 
 
 
