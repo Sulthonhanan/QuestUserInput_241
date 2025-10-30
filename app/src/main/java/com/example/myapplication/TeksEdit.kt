@@ -80,6 +80,7 @@ fun FormDataDiri(modifier: Modifier){
             nama = textName
             alamat = textAlamat
             jenis = textJK
+
         }
     )
 }
