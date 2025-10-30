@@ -20,6 +20,11 @@ fun FormDataDiri(modifier: Modifier){
     var textAlamat by remember { mutableStateOf(value = "") }
     var textJK by remember { mutableStateOf(value = "") }
 
+    //variable-variable untuk menyimpan data yang di peroleh
+    var nama by remember { mutableStateOf(value = "") }
+    var alamat by remember { mutableStateOf(value = "") }
+    var jenis by remember { mutableStateOf(value = "") }
+
 
         )
     }
